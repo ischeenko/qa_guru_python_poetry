@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "hello qa-guru"
+version = "0.1.0"
+description = "something new"
+authors = ["Alexander Ischenko <ischeenko@gmail.com>"]
+readme = "README.md"
+packages = [{include = "hello qa"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+selene = "2.0.0rc9"
+pytest = "8.3.3"
+
+
+[tool.poetry.group.dev.dependencies]
+pylint = "3.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
